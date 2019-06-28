@@ -1,0 +1,46 @@
+$headingcolor: #16171b;
+$subtextcolor: #919191;
+
+
+#blog-section{
+    padding: 80px 15px;
+    .container{
+        .title{
+            position: relative;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 30px;
+            h1{
+                color: $headingcolor;
+                font-size: 2.5rem;
+                font-weight: 900;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+                position: relative;
+                z-index: 1;
+                font
+            }
+        }
+        .blog-container{
+            .post{
+                .post-img{
+
+                }
+                .details{
+                    h4{
+
+                    }
+                    p{
+
+                    }
+                    .more{
+
+                    }
+                }
+            }
+        }
+    }
+}
