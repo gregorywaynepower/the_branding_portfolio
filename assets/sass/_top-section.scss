@@ -1,0 +1,67 @@
+$fontcolor: #16171b;
+$subtextcolor: #919191; 
+$squarecolor: #dbf1ff;
+
+#top {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 80px 0;
+        align-items: center;
+        .info {
+            padding: 15px;
+            position: relative;
+            .blue-square{
+                border: 20px solid $squarecolor;
+                width: 500px;
+                height: 500px;
+                position: absolute;
+                z-index: 0;
+                top: -70%;
+                left: -50%;
+            }
+            h1{
+                font-size: 2rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $fontcolor;
+                margin-bottom: 2rem;
+                position: relative;
+                z-index: 1;
+            }
+            p{
+                color: $subtextcolor;
+                text-transform: capitalize;
+                margin-bottom: 4rem;
+                position: relative;
+                z-index: 1;
+            }
+            a{
+                color: $fontcolor;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-weight: 700;
+                font-size: 0.9rem;
+                padding-bottom: 5px;
+                border-bottom: 2px solid $fontcolor;
+                position: relative;
+                z-index: 1;
+            }
+            
+        }
+        .img {
+            position: relative;
+            z-index: 1;
+            .background-img {
+            background: url('../img/gregorywpower.jpg');
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            max-width: 500px;
+            height: 800px;
+            margin: 0 auto;
+            }
+        } 
+    }
+}

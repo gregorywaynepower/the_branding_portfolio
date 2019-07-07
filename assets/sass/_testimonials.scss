@@ -1,0 +1,55 @@
+$headingcolor: #16171b;
+$subtextcolor: #919191;
+$blogbackground: #f9f8fc;
+$hovercolor: #ff5253;
+$paragraphcolor: #919191;
+$loadingimagecolor: #f2f3f5;
+$hovercolorinactive: rgba(255,255,255,0);
+$hovercoloractive: rgba(37, 35, 58, 0.8);
+
+#testimonials-section{
+    .container{
+        .title{
+            .square{
+
+            }
+            h1{
+
+            }
+        }
+        .testimonials-container{
+            .test-left{
+                .hover-bg{
+                    .name{
+
+                    }
+                }
+            }
+            .test-center{
+                .header{
+                    img{
+
+                    }
+                    .info{
+                        h4{
+
+                        }
+                        span{
+
+                        }
+                    }
+                }
+                p{
+
+                }
+            }
+            .test-right{
+                .hover-bg{
+                    .name{
+                        
+                    }
+                }
+            }
+        }
+    }
+}
