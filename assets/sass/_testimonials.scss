@@ -43,10 +43,68 @@ $spancolor: #929294;
             display: grid;
             grid-template-columns: 12% 76% 12%;
             grid-gap: 15px;
-            .test-left{
-                .hover-bg{
-                    .name{
-
+            padding: 100px 0;
+            .test-sides {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                .person-img{
+                    background-position: center center !important; 
+                    background-repeat: no-repeat !important;
+                    background-size: cover !important;
+                    background-color: $loadingimagecolor !important;
+                    height: 80%;
+                    width: 100%;
+                    .hover-bg{
+                        background: $hovercolorinactive;
+                        height: 100%;
+                        width: 100%;
+                        transition: all 0.2s ease-in-out;
+                        cursor: pointer;
+                        .name{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: all 0.2s ease-in-out 0.1s;
+                            font-weight: 700;
+                            font-size: 2rem;
+                            height: 100%;
+                            width: 100%;
+                            transform: translate3d(0, 50px, 0);
+                            color: white;
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+            .test-sides:hover{
+                .person-img{
+                    .hover-bg{
+                        background: $hovercoloractive;
+                        height: 100%;
+                        width: 100%;
+                        .name{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: all 0.2s ease-in-out 0.1s;
+                            font-weight: 700;
+                            font-size: 2rem;
+                            height: 100%;
+                            width: 100%;
+                            transform: translate3d(0, 0, 0);
+                            color: white;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .test-sides.test-left{
+                .person-img{
+                    .hover-bg{
+                        .name{
+                            
+                        }
                     }
                 }
             }
@@ -60,10 +118,11 @@ $spancolor: #929294;
                     padding-bottom: 50px;
                     display: flex;
                     .user-img{
-                        width: 150px;
-                        img{
-                            width: 100%;
-                        }
+                        width: 150px !important;
+                        height: 150px !important;
+                        background-position: center center !important;
+                        background-repeat: no-repeat !important;
+                        background-size: cover !important;
                     }
                     .info{
                         display: flex;
@@ -92,10 +151,12 @@ $spancolor: #929294;
                     font-size: 1.4rem;
                 }
             }
-            .test-right{
-                .hover-bg{
-                    .name{
-                        
+            .test-sides.test-right{
+                .person-img{
+                    .hover-bg{
+                        .name{
+                            
+                        }
                     }
                 }
             }
