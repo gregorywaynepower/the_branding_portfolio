@@ -65,3 +65,226 @@ $squarecolor: #dbf1ff;
         } 
     }
 }
+
+// Responsiveness Controls
+
+// Mobile Devices iPhone5/SE
+@media only screen and (min-width: 320px) and (max-width: 374px){
+    #top{
+        .container{
+            
+            .info{
+                .blue-square{
+                    
+                }
+                h1{
+                    
+                }
+                p{
+                    
+                }
+                a{
+
+                }
+            }
+            .img{
+                .background-img{
+                    
+                }
+            }
+        }
+    }
+}
+// Mobile Devices iPhone5/6/7/8
+@media only screen and (min-width: 375px) and (max-width: 413px){
+    #top{
+        .container{
+            
+            .info{
+                .blue-square{
+                    
+                }
+                h1{
+                    
+                }
+                p{
+                    
+                }
+                a{
+
+                }
+            }
+            .img{
+                .background-img{
+                    
+                }
+            }
+        }
+    }
+}
+// Mobile Devices iPhone6/7/8 Plus
+@media only screen and (min-width: 414px) and (max-width:767px){
+    #top{
+        .container{
+            padding: 0;
+            .info{
+                .blue-square{
+                    display: none;
+                }
+                h1{
+                    
+                }
+                p{
+                    
+                }
+                a{
+
+                }
+            }
+            .img{
+                .background-img{
+                    height: 100vh;
+                }
+            }
+        }
+    }
+}
+
+// Mobile Devices - (Also iPad Size)
+@media only screen and (min-width: 768px){
+    #top{
+
+        .container{
+            padding: 0;
+            .info{
+                .blue-square{
+                    
+                h1{
+                    
+                }
+                p{
+                    
+                }
+                a{
+
+                }
+            }
+            .img{
+                .background-img{
+                    height: 100vh;
+                }
+            }
+        }
+    }
+}
+}
+// Tablets Between 769px and 1023px
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+    #top{
+        .container{
+            
+            .info{
+                .blue-square{
+                    
+                }
+                h1{
+                    
+                }
+                p{
+                    
+                }
+                a{
+
+                }
+            }
+            .img{
+                .background-img{
+                    
+                }
+            }
+        }
+    }
+}
+
+// Desktop Between 1024px and 1215px
+@media only screen and (min-width: 1024px) and (max-width: 1215px){
+    #top{
+        .container{
+            
+            .info{
+                .blue-square{
+                    
+                }
+                h1{
+                    
+                }
+                p{
+                    
+                }
+                a{
+
+                }
+            }
+            .img{
+                .background-img{
+                    
+                }
+            }
+        }
+    }
+}
+
+// Widescreen between 1216px and 1407px
+@media only screen and (min-width: 1216px) and (max-width: 1407px){
+    #top{
+        .container{
+            
+            .info{
+                .blue-square{
+                    
+                }
+                h1{
+                    
+                }
+                p{
+                    
+                }
+                a{
+
+                }
+            }
+            .img{
+                .background-img{
+                    
+                }
+            }
+        }
+    }
+}
+// FullHD 1408px and above
+@media only screen and (min-width: 1408px){
+    #top{
+        .container{
+            
+            .info{
+                .blue-square{
+                    
+                }
+                h1{
+                    
+                }
+                p{
+                    
+                }
+                a{
+
+                }
+            }
+            .img{
+                .background-img{
+                    
+                }
+            }
+        }
+    }
+}

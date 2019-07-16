@@ -20,7 +20,55 @@ $grey: #eeee;
 // }
 
 .container{
-  max-width: 1120px;
+  max-width: 1150px;
   margin: 0 auto;
 }
 
+//Breakpoints Researched from Bulma.io (https://bulma.io/documentation/overview/responsiveness/)
+
+// Mobile Devices
+
+// Responsiveness Controls
+
+// // Mobile Devices iPhone5/SE
+// @media only screen and (min-width: 320px) and (max-width: 374px){
+//   #top{
+//       background: blue;
+//       width: 100%;
+//   }
+// }
+// // Mobile Devices iPhone5/6/7/8
+// @media only screen and (min-width: 375px) and (max-width: 413px){
+
+// }
+// // Mobile Devices iPhone6/7/8 Plus
+// @media only screen and (min-width: 414px) and (max-width:767px){
+
+// }
+
+// // Mobile Devices - (Also iPad Size)
+// @media only screen and (min-width: 768px){
+//   #top{
+//       background: pink;
+//   }
+// }
+// // Tablets Between 769px and 1023px
+// @media only screen and (min-width: 769px) and (max-width: 1023px){
+//   #top{
+//       background: green;
+//   }
+// }
+// // Desktop Between 1024px and 1215px
+// @media only screen and (min-width: 1024px) and (max-width: 1215px){
+//   #top{
+//       background: red;
+//   }
+// }
+// // Widescreen between 1216px and 1407px
+// @media only screen and (min-width: 1216px) and (max-width: 1407px){
+
+// }
+// // FullHD 1408px and above
+// @media only screen and (min-width: 1408px){
+
+// }
