@@ -68,62 +68,8 @@ $squarecolor: #dbf1ff;
 
 // Responsiveness Controls
 
-// Mobile Devices iPhone5/SE
-@media only screen and (min-width: 320px) and (max-width: 374px){
-    #top{
-        .container{
-            
-            .info{
-                .blue-square{
-                    
-                }
-                h1{
-                    
-                }
-                p{
-                    
-                }
-                a{
-
-                }
-            }
-            .img{
-                .background-img{
-                    
-                }
-            }
-        }
-    }
-}
-// Mobile Devices iPhone5/6/7/8
-@media only screen and (min-width: 375px) and (max-width: 413px){
-    #top{
-        .container{
-            
-            .info{
-                .blue-square{
-                    
-                }
-                h1{
-                    
-                }
-                p{
-                    
-                }
-                a{
-
-                }
-            }
-            .img{
-                .background-img{
-                    
-                }
-            }
-        }
-    }
-}
-// Mobile Devices iPhone6/7/8 Plus
-@media only screen and (min-width: 414px) and (max-width:767px){
+// Mobile Devices iPhone5/SE iPhone6/7/8/8 Plus
+@media only screen and (min-width: 320px) and (max-width:767px){
     #top{
         .container{
             padding: 0;

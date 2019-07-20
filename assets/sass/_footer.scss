@@ -45,3 +45,32 @@ footer{
         text-align: center;
     }
 }
+/ Responsiveness Controls
+
+// Mobile Devices iPhone5/SE iPhone6/7/8/8 Plus
+@media only screen and (min-width: 320px) and (max-width:767px){
+    
+}
+
+// Mobile Devices - (Also iPad Size)
+@media only screen and (min-width: 768px){
+
+}
+// Tablets Between 769px and 1023px
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+
+}
+
+// Desktop Between 1024px and 1215px
+@media only screen and (min-width: 1024px) and (max-width: 1215px){
+
+}
+
+// Widescreen between 1216px and 1407px
+@media only screen and (min-width: 1216px) and (max-width: 1407px){
+
+}
+// FullHD 1408px and above
+@media only screen and (min-width: 1408px){
+
+}
