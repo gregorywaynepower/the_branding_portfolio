@@ -78,13 +78,13 @@ $squarecolor: #dbf1ff;
                     display: none;
                 }
                 h1{
-                    
+                    margin-left: 30px;
                 }
                 p{
-                    
+                    margin-left: 30px;
                 }
                 a{
-
+                    margin-left: 30px;
                 }
             }
             .img{
@@ -104,15 +104,15 @@ $squarecolor: #dbf1ff;
             padding: 0;
             .info{
                 .blue-square{
-                    
+                    width: 525px;
                 h1{
-                    
+                    margin-left: 10px;
                 }
                 p{
-                    
+                    margin-left: 10px;
                 }
                 a{
-
+                    margin-left: 10px;
                 }
             }
             .img{
@@ -128,10 +128,10 @@ $squarecolor: #dbf1ff;
 @media only screen and (min-width: 769px) and (max-width: 1023px){
     #top{
         .container{
-            
+            padding: 0;
             .info{
                 .blue-square{
-                    
+                    width: 550px;   
                 }
                 h1{
                     
@@ -145,7 +145,7 @@ $squarecolor: #dbf1ff;
             }
             .img{
                 .background-img{
-                    
+                    height: 100vh;  
                 }
             }
         }
@@ -156,10 +156,11 @@ $squarecolor: #dbf1ff;
 @media only screen and (min-width: 1024px) and (max-width: 1215px){
     #top{
         .container{
-            
+            padding: 0;
             .info{
+                margin-left: 20px;
                 .blue-square{
-                    
+                    width: 600px;
                 }
                 h1{
                     
@@ -187,7 +188,7 @@ $squarecolor: #dbf1ff;
             
             .info{
                 .blue-square{
-                    
+
                 }
                 h1{
                     
@@ -214,7 +215,7 @@ $squarecolor: #dbf1ff;
             
             .info{
                 .blue-square{
-                    
+                    margin-left: 125px;
                 }
                 h1{
                     
