@@ -161,11 +161,12 @@ $hovercoloractive: rgba(37, 35, 58, 0.8);
             .title{
                 
                 h1{
-                    
+                    font-size: 3rem;
                 }
             }
             .blog-container{
-                
+                grid-template-columns: 1fr;
+                grid-template-rows: 400px 400px 400px 400px 400px;
                 .post{
                     
                     .post-img{
@@ -225,11 +226,12 @@ $hovercoloractive: rgba(37, 35, 58, 0.8);
             .title{
                 
                 h1{
-                    
+                    font-size: 3;  
                 }
             }
             .blog-container{
-                
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 588px 588px 588px;
                 .post{
                     
                     .post-img{
@@ -292,7 +294,8 @@ $hovercoloractive: rgba(37, 35, 58, 0.8);
                 }
             }
             .blog-container{
-                
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 588px 588px 588px;
                 .post{
                     
                     .post-img{
