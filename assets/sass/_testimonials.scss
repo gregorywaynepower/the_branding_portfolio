@@ -166,7 +166,7 @@ $spancolor: #929294;
 // Responsiveness Controls
 
 // Mobile Devices iPhone5/SE iPhone6/7/8/8 Plus
-@media only screen and (min-width: 320px) and (max-width:767px){
+@media only screen and  (min-width: 320px) and (max-width:767px){
     #testimonials-section{
         
         .container{
@@ -181,7 +181,8 @@ $spancolor: #929294;
                 }
             }
             .testimonials-container{
-                
+                grid-template-columns: 50% 50%;
+                grid-gap: 0;
                 .test-sides {
                     
                     .person-img{
@@ -205,6 +206,7 @@ $spancolor: #929294;
                     }
                 }
                 .test-sides.test-left{
+                    
                     .person-img{
                         .hover-bg{
                             .name{
@@ -265,7 +267,7 @@ $spancolor: #929294;
                     }
                 }
                 .testimonials-container{
-                    
+                    grid-grap: 0;
                     .test-sides {
                         
                         .person-img{
@@ -332,6 +334,7 @@ $spancolor: #929294;
         } 
     }
 }
+
 // Tablets Between 769px and 1023px
 @media only screen and (min-width: 769px) and (max-width: 1023px){
     @media only screen and (min-width: 320px) and (max-width:767px){
