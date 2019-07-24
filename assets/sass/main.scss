@@ -24,6 +24,27 @@ $grey: #eeee;
   margin: 0 auto;
 }
 
+header{
+  display: flex;
+  padding: 20px;
+  .logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: white;
+    background: black;
+    padding: 15px 20px;
+  }
+  .header-menu{
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    a{
+      text-decoration: none;
+    }
+  }
+}
+
 //Breakpoints Researched from Bulma.io (https://bulma.io/documentation/overview/responsiveness/)
 
 // Responsiveness Controls
