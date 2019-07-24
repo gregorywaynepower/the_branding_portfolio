@@ -182,6 +182,7 @@ $spancolor: #929294;
             }
             .testimonials-container{
                 grid-template-columns: 50% 50%;
+                grid-template-rows: 100px 1fr;
                 grid-gap: 0;
                 .test-sides {
                     
@@ -206,8 +207,10 @@ $spancolor: #929294;
                     }
                 }
                 .test-sides.test-left{
-                    
+                    grid-column: 1 / 2 ;
+                    grid-row: 1 / 2 ;
                     .person-img{
+                        background-position: center 0% !important;
                         .hover-bg{
                             .name{
                                 
@@ -216,7 +219,9 @@ $spancolor: #929294;
                     }
                 }
                 .test-center{
-                    
+                    grid-column: 1 / 3 ;
+                    grid-row: 2 / 3 ;
+                    padding: 20px;
                     .header{
                         
                         .user-img{
@@ -228,16 +233,19 @@ $spancolor: #929294;
                                 
                             }
                             span{
-                                
+                                font-size: 0.8rem;
                             }
                         }
                     }
                     p{
-                        
+                        font-size: 1rem;
                     }
                 }
                 .test-sides.test-right{
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 2 ;
                     .person-img{
+                        background-position: center 0% !important;
                         .hover-bg{
                             .name{
                                 
