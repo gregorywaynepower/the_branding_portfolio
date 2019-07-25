@@ -34,9 +34,12 @@ header{
     font-weight: 700;
     text-transform: capitalize;
     color: white;
+    display: flex;
     .name{
       background: black;
       padding: 15px 20px;
+      text-decoration: none;
+      color: white;
     }
   }
   .header-menu{
@@ -71,6 +74,7 @@ header{
     padding: 15px;
     font-size: 2rem;
     display: none;
+    cursor: pointer;
   }
 }
 
@@ -141,10 +145,22 @@ header{
       
     }
     .header-menu{
-      
+      font-size: 1rem;
+      text-decoration: none;
+      text-transform: capitalize;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   
       a{
-        
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+        padding: 0 10px 0;
+        font-weight: 700;
+        border-radius: 1px;
+        transition: color 0.3s ease-in-out;
+        transition: background 0.1s ease-in-out;
       }
       a:hover{
         
@@ -164,10 +180,22 @@ header{
       
     }
     .header-menu{
-      
+      font-size: 1rem;
+      text-decoration: none;
+      text-transform: capitalize;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   
       a{
-        
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+        padding: 0 10px 0;
+        font-weight: 700;
+        border-radius: 1px;
+        transition: color 0.3s ease-in-out;
+        transition: background 0.1s ease-in-out;
       }
       a:hover{
         
@@ -187,10 +215,22 @@ header{
       
     }
     .header-menu{
-      
+      font-size: 1rem;
+      text-decoration: none;
+      text-transform: capitalize;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   
       a{
-        
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+        padding: 0 10px 0;
+        font-weight: 700;
+        border-radius: 1px;
+        transition: color 0.3s ease-in-out;
+        transition: background 0.1s ease-in-out;
       }
       a:hover{
         
@@ -209,10 +249,22 @@ header{
       
     }
     .header-menu{
-      
+      font-size: 1rem;
+      text-decoration: none;
+      text-transform: capitalize;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   
       a{
-        
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+        padding: 0 10px 0;
+        font-weight: 700;
+        border-radius: 1px;
+        transition: color 0.3s ease-in-out;
+        transition: background 0.1s ease-in-out;
       }
       a:hover{
         
