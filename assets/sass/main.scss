@@ -9,6 +9,7 @@
 @import "footer";
 
 $grey: #eeee;
+$hovercolor:rgba(37, 35, 58,1);
 
 
 *{
@@ -27,21 +28,49 @@ $grey: #eeee;
 header{
   display: flex;
   padding: 20px;
+  justify-content: space-between;
   .logo{
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: capitalize;
     color: white;
-    background: black;
-    padding: 15px 20px;
+    .name{
+      background: black;
+      padding: 15px 20px;
+    }
   }
   .header-menu{
     font-size: 1rem;
     text-decoration: none;
     text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     a{
+      font-size: 1rem;
       text-decoration: none;
+      color: black;
+      padding: 0 10px 0;
+      font-weight: 700;
+      border-radius: 1px;
+      transition: color 0.3s ease-in-out;
+      transition: background 0.1s ease-in-out;
     }
+    a:hover{
+      font-weight: 700;
+      color: rgb(237, 242, 245);
+      background: rgba(92, 92, 92, 0.534);
+    }
+  }
+  .menu-btn{
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 2rem;
+    display: none;
   }
 }
 
@@ -49,30 +78,148 @@ header{
 
 // Responsiveness Controls
 
-// // Mobile Devices iPhone5/SE iPhone6/7/8/8 Plus
-// @media only screen and (min-width: 320px) and (max-width:767px){
+// Mobile Devices iPhone5/SE iPhone6/7/8/8 Plus
+@media only screen and (min-width: 320px) and (max-width:767px){
+  header{
     
-// }
+    .logo{
+      padding: 10px 15px;
+      font-size: 1.3rem;
+    }
+    .header-menu{
+      display: none;
+      a{
+        
+      }
+      a:hover{
+        
+      }
+    }
+    .menu-btn{
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      font-size: 1.8rem;
+    }
+  }
+}
 
-// // Mobile Devices - (Also iPad Size)
-// @media only screen and (min-width: 768px){
+// Mobile Devices - (Also iPad Size)
+@media only screen and (min-width: 768px){
+  header{
+    
+    .logo{
+      padding: 10px 15px;
+      font-size: 1.3rem;
+    }
+    .header-menu{
+      display: none;
+      a{
+        
+      }
+      a:hover{
+        
+      }
+    }
+    .menu-btn{
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      font-size: 1.8rem;
+    }
+  }
+}
+// Tablets Between 769px and 1023px
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+  header{
+    
+    .logo{
+      
+    }
+    .header-menu{
+      
+  
+      a{
+        
+      }
+      a:hover{
+        
+      }
+    }
+    .menu-btn{
+      display: none;
+    }
+  }
+}
 
-// }
-// // Tablets Between 769px and 1023px
-// @media only screen and (min-width: 769px) and (max-width: 1023px){
+// Desktop Between 1024px and 1215px
+@media only screen and (min-width: 1024px) and (max-width: 1215px){
+  header{
+    
+    .logo{
+      
+    }
+    .header-menu{
+      
+  
+      a{
+        
+      }
+      a:hover{
+        
+      }
+    }
+    .menu-btn{
+      display: none;
+    }
+  }
+}
 
-// }
-
-// // Desktop Between 1024px and 1215px
-// @media only screen and (min-width: 1024px) and (max-width: 1215px){
-
-// }
-
-// // Widescreen between 1216px and 1407px
-// @media only screen and (min-width: 1216px) and (max-width: 1407px){
-
-// }
-// // FullHD 1408px and above
-// @media only screen and (min-width: 1408px){
-
-// }
+// Widescreen between 1216px and 1407px
+@media only screen and (min-width: 1216px) and (max-width: 1407px){
+  header{
+    
+    .logo{
+      
+    }
+    .header-menu{
+      
+  
+      a{
+        
+      }
+      a:hover{
+        
+      }
+    }
+    .menu-btn{
+      display: none;
+    }
+  }
+}
+// FullHD 1408px and above
+@media only screen and (min-width: 1408px){
+  header{
+    
+    .logo{
+      
+    }
+    .header-menu{
+      
+  
+      a{
+        
+      }
+      a:hover{
+        
+      }
+    }
+    .menu-btn{
+      display: none;
+    }
+  }
+}
