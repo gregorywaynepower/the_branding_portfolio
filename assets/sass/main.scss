@@ -87,6 +87,11 @@ header{
   height: 100vh;
   width: 50%;
   z-index: 10;
+  transform: translate3d(-100%, 0, 0);
+  transition: all 0.4s ease-in-out;
+  -webkit-box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.75);
+  box-shadow: 2px 0px 75px -15px rgba(0,0,0,0.75);
   a{
     padding: 15px;
     text-decoration: none;
@@ -98,9 +103,9 @@ header{
     color: rgb(237, 242, 245);
     background: rgba(92, 92, 92, 0.534)
   }
-  .mobile-menu.active{
-    
-  }
+}
+.mobile-menu.active{
+  transform: translate3d(300px, 0, 0);
 }
 
 //Breakpoints Researched from Bulma.io (https://bulma.io/documentation/overview/responsiveness/)
