@@ -78,8 +78,8 @@ header{
   }
 }
 .mobile-menu{
+  display: none;
   background: white;
-  display: flex;
   flex-direction: column;
   padding: 15px;
   position: absolute;
@@ -137,6 +137,18 @@ header{
       padding: 15px;
       font-size: 1.8rem;
     }
+  }
+  .mobile-menu{
+    display: flex;
+    a{
+      
+    }
+    a:hover{
+      
+    }
+  }
+  .mobile-menu.active{
+
   }
 }
 
