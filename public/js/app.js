@@ -1,17 +1,14 @@
-var menuBtn = document.getElementsByClassName('menu-btn')
-var mobileMenu = document.getElementsByClassName('mobile-menu')
+const menuBtn = document.querySelector('.menu-btn');
+const mobileMenu = document.querySelector('.mobile-menu');
 
-var clickedBtn = function() {
-    mobileMenu[0].classList.toggle('active')
-}
+const toggleMobileMenu = () => mobileMenu.classList.toggle('active');
 
-menuBtn[0].addEventListener('click', clickedBtn)
+menuBtn.addEventListener('click', toggleMobileMenu);
 
-console.log(menuBtn[0])
-
-window.addEventListener('mouseup', function(event){
-    var box = document.getElementByClassName('mobile-menu.active')
-    if(event.target != box && event.target.parentNode != box){
-        box.style.display = 'none'
+window.addEventListener('mouseup', function(event) {
+  if (mobileMenu.classList.contains('active') && event.target !== mobileMenu) {
+    if (!event.target.classList.contains('fa-bars')) {
+      toggleMobileMenu();
     }
-})
+  }
+});
