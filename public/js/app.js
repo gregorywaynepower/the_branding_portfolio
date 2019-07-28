@@ -10,8 +10,8 @@ menuBtn[0].addEventListener('click', clickedBtn)
 console.log(menuBtn[0])
 
 window.addEventListener('mouseup', function(event){
-    var box = document.getElementById('mobile-menu.active')
+    var box = document.getElementByClassName('mobile-menu.active')
     if(event.target != box && event.target.parentNode != box){
-        box.cssStyleSheet.display = 'none'
+        box.style.display = 'none'
     }
 })
