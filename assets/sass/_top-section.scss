@@ -1,6 +1,7 @@
 $fontcolor: #16171b;
 $subtextcolor: #919191; 
 $squarecolor: #dbf1ff;
+$hovercolor:rgba(37, 35, 58,1);
 
 #top {
     .container{
@@ -46,6 +47,10 @@ $squarecolor: #dbf1ff;
                 border-bottom: 2px solid $fontcolor;
                 position: relative;
                 z-index: 1;
+            }
+            a:hover{
+                color: grey;
+                border-bottom: 2px solid grey;
             }
             
         }
