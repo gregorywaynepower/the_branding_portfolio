@@ -1,0 +1,540 @@
+$headingcolor: #16171b;
+$subtextcolor: #919191;
+$blogbackground: #f9f8fc;
+$hovercolor: #ff5253;
+$paragraphcolor: #919191;
+$loadingimagecolor: #f2f3f5;
+$hovercolorinactive: rgba(255,255,255,0);
+$hovercoloractive: rgba(37, 35, 58, 0.8);
+
+
+#blog-section{
+    padding: 100px 15px;
+    background: $blogbackground;
+    .container{
+        .title{
+            position: relative;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 30px;
+            h1{
+                color: $headingcolor;
+                text-align: center;
+                font-size: 4rem;
+                font-weight: 900;
+                margin-bottom: 80px;
+                text-transform: uppercase;
+                position: relative;
+                z-index: 1;
+            }
+        }
+        .blog-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 588px 588px;
+            grid-gap: 15px;
+            overflow: hidden;
+            .post{
+                position: relative;
+                transition: all 0.4s ease-in-out;
+                height: 100%;
+                overflow: hidden;
+                .post-img{
+                    height: 100%;
+                    width: 100%;
+                    background-position: center center !important;
+                    background-repeat: no-repeat !important;
+                    background-size: cover !important;
+                    background-color: $loadingimagecolor !important;
+                }
+                .details{
+                    background: white;
+                    padding: 35px;
+                    position: absolute;
+                    top: 100%;
+                    width: 100%;
+                    transform: translate3d(0, -200px, 0);
+                    transition: all 0.4s ease-in-out;
+                    cursor: pointer;
+                    h4{
+                        font-size: 1.1rem;
+                        color: $headingcolor;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                        margin-bottom: 1.8rem;
+                        // line-height: 1.1;
+                        transition: all 0.4s ease-in-out;
+                    }
+                    p{
+                        font-size: 1rem;
+                        color: $paragraphcolor;
+                        font-weight: 400;
+                        letter-spacing: 1px;
+                        margin-bottom: 1.8rem;
+                        line-height: 1.5;
+                        transition: all 0.4s ease-in-out;
+                    }
+                }
+                .more{
+                    position: absolute;
+                    z-index: 3;
+                    width: 100%;
+                    bottom: 0;
+                    background: rgba(253, 253, 253, 0.986);
+                    padding: 0 35px 35px;
+                    transition: all 0.4s ease-in-out;
+                    transform: translate3d(0, 80px, 0);
+                    opacity: 0;
+                    .button{
+                        font-size: 1.3rem;
+                        color: $headingcolor;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                        line-height: 1.5;
+                        display: inline-block;
+                        border-bottom: 2px solid $headingcolor;
+                        text-transform: uppercase;
+                        padding-bottom: 10px;
+                        transition: all 0.4s ease-in-out 0.1s;
+                        opacity: 0;
+                        transform: translate3d(0, 20px, 0);
+                        a{
+                            text-decoration: none;
+                            color: $headingcolor;
+                            transition: all 0.4s ease-in-out 0.1s;
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+            /*Hover effect on post*/
+            .post:hover{
+                
+                
+                .details{
+                    transform: translate3d(0, -388px, 0);
+                    background: $blogbackground;
+                    transition: all 0.4s ease-in-out;
+                    h4{
+                        color: rgba(37, 10, 10, 0.986);
+                        transition: all 0.4s ease-in-out;
+                    }
+                    p{
+                        color: $paragraphcolor;
+                        transition: all 0.4s ease-in-out;
+                    }
+                }
+                .more{
+                    background: $blogbackground;
+                    transition: all 0.4s ease-in-out 0.1s;
+                    transform: translate3d(0, 0, 0);
+                    opacity: 1;
+                   .button{
+                       color: $hovercolor;
+                       border-bottom: 2px solid $hovercolor;
+                       opacity: 1;
+                       transition: all 0.4s ease-in-out 0.1s;
+                       a{
+                           text-decoration: none;
+                           color: $hovercolor;
+                           transition: all 0.4s ease-in-out 0.1s;
+                           opacity: 1;
+                       }
+                   } 
+                }
+            }
+        }
+    }
+}
+
+// Responsiveness Controls
+
+// Mobile Devices iPhone5/SE iPhone6/7/8/8 Plus
+@media only screen and (min-width: 320px) and (max-width:767px){
+    #blog-section{
+
+        .container{
+            .title{
+                
+                h1{
+                    font-size: 3rem;
+                }
+            }
+            .blog-container{
+                grid-template-columns: 1fr;
+                grid-template-rows: 400px 400px 400px 400px 400px;
+                .post{
+                    
+                    .post-img{
+                        
+                    }
+                    .details{
+                        
+                        h4{
+                            
+                        }
+                        p{
+                            
+                        }
+                    }
+                    .more{
+                        
+                        .button{
+                            
+                            a{
+                                
+                            }
+                        }
+                    }
+                }
+                /*Hover effect on post*/
+                .post:hover{
+                    
+                    .details{
+                        
+                        h4{
+                            
+                        }
+                        p{
+                            
+                        }
+                    }
+                    .more{
+                        
+                       .button{
+                           
+                           a{
+                               
+                           }
+                       } 
+                    }
+                }
+            }
+        }
+    }  
+}
+
+// Mobile Devices - (Also iPad Size)
+@media only screen and (min-width: 768px){
+    #blog-section{
+
+        .container{
+            .title{
+                
+                h1{
+                    font-size: 3;  
+                }
+            }
+            .blog-container{
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 588px 588px 588px;
+                .post{
+                    
+                    .post-img{
+                        
+                    }
+                    .details{
+                        
+                        h4{
+                            
+                        }
+                        p{
+                            
+                        }
+                    }
+                    .more{
+                        
+                        .button{
+                            
+                            a{
+                                
+                            }
+                        }
+                    }
+                }
+                /*Hover effect on post*/
+                .post:hover{
+                    
+                    .details{
+                        
+                        h4{
+                            
+                        }
+                        p{
+                            
+                        }
+                    }
+                    .more{
+                        
+                       .button{
+                           
+                           a{
+                               
+                           }
+                       } 
+                    }
+                }
+            }
+        }
+    }
+}
+// Tablets Between 769px and 1023px
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+    #blog-section{
+
+        .container{
+            .title{
+                
+                h1{
+                    
+                }
+            }
+            .blog-container{
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 588px 588px 588px;
+                .post{
+                    
+                    .post-img{
+                        
+                    }
+                    .details{
+                        
+                        h4{
+                            
+                        }
+                        p{
+                            
+                        }
+                    }
+                    .more{
+                        
+                        .button{
+                            
+                            a{
+                                
+                            }
+                        }
+                    }
+                }
+                /*Hover effect on post*/
+                .post:hover{
+                    
+                    .details{
+                        
+                        h4{
+                            
+                        }
+                        p{
+                            
+                        }
+                    }
+                    .more{
+                        
+                       .button{
+                           
+                           a{
+                               
+                           }
+                       } 
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Desktop Between 1024px and 1215px
+@media only screen and (min-width: 1024px) and (max-width: 1215px){
+    #blog-section{
+
+        .container{
+            .title{
+                
+                h1{
+                    
+                }
+            }
+            .blog-container{
+                
+                .post{
+                    
+                    .post-img{
+                        
+                    }
+                    .details{
+                        
+                        h4{
+                            
+                        }
+                        p{
+                            
+                        }
+                    }
+                    .more{
+                        
+                        .button{
+                            
+                            a{
+                                
+                            }
+                        }
+                    }
+                }
+                /*Hover effect on post*/
+                .post:hover{
+                    
+                    .details{
+                        
+                        h4{
+                            
+                        }
+                        p{
+                            
+                        }
+                    }
+                    .more{
+                        
+                       .button{
+                           
+                           a{
+                               
+                           }
+                       } 
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Widescreen between 1216px and 1407px
+@media only screen and (min-width: 1216px) and (max-width: 1407px){
+    #blog-section{
+
+        .container{
+            .title{
+                
+                h1{
+                    
+                }
+            }
+            .blog-container{
+                
+                .post{
+                    
+                    .post-img{
+                        
+                    }
+                    .details{
+                        
+                        h4{
+                            
+                        }
+                        p{
+                            
+                        }
+                    }
+                    .more{
+                        
+                        .button{
+                            
+                            a{
+                                
+                            }
+                        }
+                    }
+                }
+                /*Hover effect on post*/
+                .post:hover{
+                    
+                    .details{
+                        
+                        h4{
+                            
+                        }
+                        p{
+                            
+                        }
+                    }
+                    .more{
+                        
+                       .button{
+                           
+                           a{
+                               
+                           }
+                       } 
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FullHD 1408px and above
+@media only screen and (min-width: 1408px){
+    #blog-section{
+
+        .container{
+            .title{
+                
+                h1{
+                    
+                }
+            }
+            .blog-container{
+                
+                .post{
+                    
+                    .post-img{
+                        
+                    }
+                    .details{
+                        
+                        h4{
+                            
+                        }
+                        p{
+                            
+                        }
+                    }
+                    .more{
+                        
+                        .button{
+                            
+                            a{
+                                
+                            }
+                        }
+                    }
+                }
+                /*Hover effect on post*/
+                .post:hover{
+                    
+                    .details{
+                        
+                        h4{
+                            
+                        }
+                        p{
+                            
+                        }
+                    }
+                    .more{
+                        
+                       .button{
+                           
+                           a{
+                               
+                           }
+                       } 
+                    }
+                }
+            }
+        }
+    }
+}

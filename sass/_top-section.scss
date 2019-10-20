@@ -1,0 +1,242 @@
+$fontcolor: #16171b;
+$subtextcolor: #919191; 
+$squarecolor: #dbf1ff;
+$hovercolor:rgba(37, 35, 58,1);
+
+#top {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 80px 0;
+        align-items: center;
+        .info {
+            padding: 15px;
+            position: relative;
+            .blue-square{
+                border: 20px solid $squarecolor;
+                width: 500px;
+                height: 500px;
+                position: absolute;
+                z-index: 0;
+                top: -70%;
+                left: -50%;
+            }
+            h1{
+                font-size: 2rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $fontcolor;
+                margin-bottom: 2rem;
+                position: relative;
+                z-index: 1;
+            }
+            p{
+                color: $subtextcolor;
+                text-transform: capitalize;
+                margin-bottom: 4rem;
+                position: relative;
+                z-index: 1;
+            }
+            a{
+                color: $fontcolor;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-weight: 700;
+                font-size: 0.9rem;
+                padding-bottom: 5px;
+                border-bottom: 2px solid $fontcolor;
+                position: relative;
+                z-index: 1;
+            }
+            a:hover{
+                color: grey;
+                border-bottom: 2px solid grey;
+            }
+            
+        }
+        .img {
+            position: relative;
+            z-index: 1;
+            .background-img {
+            background: url('../img/gregorywpower.jpg');
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            max-width: 500px;
+            height: 800px;
+            margin: 0 auto;
+            }
+        } 
+    }
+}
+
+// Responsiveness Controls
+
+// Mobile Devices iPhone5/SE iPhone6/7/8/8 Plus
+@media only screen and (min-width: 320px) and (max-width:767px){
+    #top{
+        .container{
+            padding: 0;
+            .info{
+                .blue-square{
+                    display: none;
+                }
+                h1{
+                    margin-left: 30px;
+                }
+                p{
+                    margin-left: 30px;
+                }
+                a{
+                    margin-left: 30px;
+                }
+            }
+            .img{
+                .background-img{
+                    height: 100vh;
+                }
+            }
+        }
+    }
+}
+
+// Mobile Devices - (Also iPad Size)
+@media only screen and (min-width: 768px){
+    #top{
+
+        .container{
+            padding: 0;
+            .info{
+                .blue-square{
+                    width: 525px;
+                h1{
+                    margin-left: 10px;
+                }
+                p{
+                    margin-left: 10px;
+                }
+                a{
+                    margin-left: 10px;
+                }
+            }
+            .img{
+                .background-img{
+                    height: 100vh;
+                }
+            }
+        }
+    }
+}
+}
+// Tablets Between 769px and 1023px
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+    #top{
+        .container{
+            padding: 0;
+            .info{
+                .blue-square{
+                    width: 550px;   
+                }
+                h1{
+                    
+                }
+                p{
+                    
+                }
+                a{
+
+                }
+            }
+            .img{
+                .background-img{
+                    height: 100vh;  
+                }
+            }
+        }
+    }
+}
+
+// Desktop Between 1024px and 1215px
+@media only screen and (min-width: 1024px) and (max-width: 1215px){
+    #top{
+        .container{
+            padding: 0;
+            .info{
+                margin-left: 20px;
+                .blue-square{
+                    width: 600px;
+                }
+                h1{
+                    
+                }
+                p{
+                    
+                }
+                a{
+
+                }
+            }
+            .img{
+                .background-img{
+                    
+                }
+            }
+        }
+    }
+}
+
+// Widescreen between 1216px and 1407px
+@media only screen and (min-width: 1216px) and (max-width: 1407px){
+    #top{
+        .container{
+            
+            .info{
+                .blue-square{
+
+                }
+                h1{
+                    
+                }
+                p{
+                    
+                }
+                a{
+
+                }
+            }
+            .img{
+                .background-img{
+                    
+                }
+            }
+        }
+    }
+}
+// FullHD 1408px and above
+@media only screen and (min-width: 1408px){
+    #top{
+        .container{
+            
+            .info{
+                .blue-square{
+                    margin-left: 125px;
+                }
+                h1{
+                    
+                }
+                p{
+                    
+                }
+                a{
+
+                }
+            }
+            .img{
+                .background-img{
+                    
+                }
+            }
+        }
+    }
+}

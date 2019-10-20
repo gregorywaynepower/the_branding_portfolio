@@ -1,0 +1,503 @@
+$experiencetitle: #c6e4ff;
+$headingcolor: #16171b;
+$shapecolor: #eef9ff;
+$subtextcolor: #919191;
+$experiencesquare: #52b8ff;
+$experiencecircle: #ffc853;
+$h4color: #16171b;
+$datetcolor: #52b7ff;
+$hovercolor: #ff5253;
+
+#experience-section{
+    padding: 80px 15px;
+    .container{
+        .large-title{
+            color: $experiencetitle;
+            font-weight: 900;
+            font-size: 4.5rem;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            position: relative;
+            left: -50px;
+        }
+        .experience-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            .large-icons{
+                .square{
+                    border: 20px solid $experiencesquare;
+                    padding: 5px;
+                    display: inline-block;
+                    position: relative;
+                    top: -30px;
+                    .blue-box{
+                        width: 150px;
+                        height: 150px;
+                        background: $experiencesquare;
+                        padding: 5px;
+                        color: white;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        // Center Content
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.1rem;
+                        letter-spacing: 3px;
+                    }
+                }
+                .circle{
+                    border: 20px solid $experiencecircle;
+                    padding: 5px;
+                    border-radius: 50%;
+                    // Move Circle
+                    display: inline-block;
+                    position: relative;
+                    top: 97px;
+                    left: 50px;
+                    .white-box{
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        background: white;
+                        padding: 5px;
+                        color: $experiencecircle;
+                        font-weight: 600;
+                        display: inline-block;
+                        // Center Content
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1.1rem;
+                        letter-spacing: 3px;
+                        text-transform: uppercase;
+                    }
+                }
+                .triangle{
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 150px 230px 150px;
+                    border-color: transparent transparent #ff5253 transparent;
+                    position: relative;
+                    .triangle-box{
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 0 93.75px 151.75px 93.75px;
+                        border-color: transparent transparent #ffffff transparent;
+                        position: absolute;
+                        left: -94px;
+                        top: 49px;
+                        font-weight: 600;
+                        font-size: 1.1rem;
+                        letter-spacing: 3px;
+                        text-transform: uppercase;
+                        color: $hovercolor;
+                        .text{
+                            position: relative;
+                            top: 98px;
+                            left: -29px;
+                        }
+                    }
+                }
+            }
+            .info{
+                padding: 80px 0 0;
+                .info-box{
+                    padding: 15px;
+                    h4{
+                        color: $h4color;
+                        font-weight: 800;
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                        letter-spacing: 4px;
+                    }
+                    .date{
+                        color: $datetcolor;
+                        font-weight: 600;
+                        font-size: 0.8rem;
+                        text-transform: capitalize;
+                        letter-spacing: 1px;
+                        padding: 15px 0;
+                        display: block;
+                    }
+                    p{
+                        color: $subtextcolor;
+                        font-weight: 400;
+                        font-size: 0.9rem;
+                        letter-spacing: 1px;
+                        line-height: 1.5;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsiveness Controls
+
+// Mobile Devices iPhone5/SE iPhone6/7/8/8 Plus
+@media only screen and (min-width: 320px) and (max-width:767px){
+    #experience-section{
+
+        .container{
+            .large-title{
+                left: 0;
+                font-size: 2.5rem;
+                margin-bottom: 0;
+            }
+            .experience-container{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 20px;
+                .large-icons{
+                    // Removed the Icons for Mobile
+                    display: none;
+                    .square{
+                        top: -30px;
+                        .blue-box{
+
+                        }
+                    }
+                    .circle{
+                        // Move Circle
+                        top: 97px;
+                        left: 50px;
+                        .white-box{
+                            
+                        }
+                    }
+                    .triangle{
+                        
+                        .triangle-box{
+                            left: -94px;
+                            top: 49px;
+                            
+                            .text{
+                                
+                            }
+                        }
+                    }
+                }
+                .info{
+                    padding-top: 40px;
+                    .info-box{
+                        
+                        h4{
+                            font-size: 0.9rem;
+                        }
+                        .date{
+                            font-size: 0.8rem;
+                        }
+                        p{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Mobile Devices - (Also iPad Size)
+@media only screen and (min-width: 768px){
+    #experience-section{
+        
+        .container{
+            
+            .large-title{
+                left: 0;
+            }
+            .experience-container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 20px;
+                .large-icons{
+                    .square{
+                        margin-top: 102px;
+                        margin-left: 28px;
+                        .blue-box{
+
+                        }
+                    }
+                    .circle{
+                        // Move Circle
+                        margin-top: -160px;
+                        margin-left: 123px;
+                        .white-box{
+                            
+                        }
+                    }
+                    .triangle{
+                        margin-top: 60px;
+                        left: 15px;
+                        .triangle-box{
+                            left: -94px;
+                            top: 49px;
+                            
+                            .text{
+                                
+                            }
+                        }
+                    }
+                }
+                .info{
+                    
+                    .info-box{
+                        
+                        h4{
+                            
+                        }
+                        .date{
+                            
+                        }
+                        p{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Tablets Between 769px and 1023px
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+    #experience-section{
+        
+        .container{
+            .large-title{
+                left: -50px;
+            }
+            .experience-container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 20px;
+                .large-icons{
+                    .square{
+                        top: -30px;
+                        .blue-box{
+
+                        }
+                    }
+                    .circle{
+                        // Move Circle
+                        top: 97px;
+                        left: 50px;
+                        .white-box{
+                            
+                        }
+                    }
+                    .triangle{
+                        left: 85px;
+                        .triangle-box{
+                            left: -94px;
+                            top: 49px;
+                            
+                            .text{
+                                
+                            }
+                        }
+                    }
+                }
+                .info{
+                    
+                    .info-box{
+                        
+                        h4{
+                            
+                        }
+                        .date{
+                            
+                        }
+                        p{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Desktop Between 1024px and 1215px
+@media only screen and (min-width: 1024px) and (max-width: 1215px){
+    #experience-section{
+        
+        .container{
+            .large-title{
+                left: 0px;
+            }
+            .experience-container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 20px;
+                .large-icons{
+                    .square{
+                        top: -30px;
+                        left: 50px;
+                        .blue-box{
+
+                        }
+                    }
+                    .circle{
+                        // Move Circle
+                        top: 97px;
+                        left: 90px;
+                        .white-box{
+                            
+                        }
+                    }
+                    .triangle{
+                        left: 35px;
+                        .triangle-box{
+                            left: -94px;
+                            top: 49px;
+                            
+                            .text{
+                                
+                            }
+                        }
+                    }
+                }
+                .info{
+                    
+                    .info-box{
+                        
+                        h4{
+                            
+                        }
+                        .date{
+                            
+                        }
+                        p{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Widescreen between 1216px and 1407px
+@media only screen and (min-width: 1216px) and (max-width: 1407px){
+    #experience-section{
+        
+        .container{
+            .large-title{
+                left: -50px;
+            }
+            .experience-container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 20px;
+                .large-icons{
+                    .square{
+                        top: -30px;
+                        .blue-box{
+
+                        }
+                    }
+                    .circle{
+                        // Move Circle
+                        top: 97px;
+                        left: 50px;
+                        .white-box{
+                            
+                        }
+                    }
+                    .triangle{
+                        
+                        .triangle-box{
+                            left: -94px;
+                            top: 49px;
+                            
+                            .text{
+                                
+                            }
+                        }
+                    }
+                }
+                .info{
+                    
+                    .info-box{
+                        
+                        h4{
+                            
+                        }
+                        .date{
+                            
+                        }
+                        p{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FullHD 1408px and above
+@media only screen and (min-width: 1408px){
+    #experience-section{
+        
+        .container{
+            .large-title{
+                left: -50px;
+            }
+            .experience-container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 20px;
+                .large-icons{
+                    .square{
+                        top: -30px;
+                        .blue-box{
+
+                        }
+                    }
+                    .circle{
+                        // Move Circle
+                        top: 97px;
+                        left: -50px;
+                        .white-box{
+                            
+                        }
+                    }
+                    .triangle{
+                        
+                        .triangle-box{
+                            left: -94px;
+                            top: 49px;
+                            
+                            .text{
+                                
+                            }
+                        }
+                    }
+                }
+                .info{
+                    
+                    .info-box{
+                        
+                        h4{
+                            
+                        }
+                        .date{
+                            
+                        }
+                        p{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
