@@ -1,6 +1,1 @@
 node_modules/
-.bablrc
-.prettierrc
-gulpfile.js
-postcss.config.js
-webpack.config.js
