@@ -204,6 +204,7 @@ table {
 #top .container .img .background-img {
   background: url("../img/Gregory Web 1.jpg");
   background-position: top center;
+  background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
